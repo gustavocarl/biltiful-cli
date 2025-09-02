@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "biltiful-cli", "biltiful-cli\biltiful-cli.csproj", "{6E508760-5C5E-458F-8980-229B7EAC54BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "biltiful", "biltiful\biltiful.csproj", "{6E508760-5C5E-458F-8980-229B7EAC54BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastrosBasicos", "CadastrosBasicos\CadastrosBasicos.csproj", "{E5F56ED0-FC4A-4F0F-8BA2-767A9553B6FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +14,9 @@ Global
 		{6E508760-5C5E-458F-8980-229B7EAC54BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E508760-5C5E-458F-8980-229B7EAC54BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E508760-5C5E-458F-8980-229B7EAC54BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F56ED0-FC4A-4F0F-8BA2-767A9553B6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F56ED0-FC4A-4F0F-8BA2-767A9553B6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F56ED0-FC4A-4F0F-8BA2-767A9553B6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F56ED0-FC4A-4F0F-8BA2-767A9553B6FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
