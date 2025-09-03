@@ -1,6 +1,6 @@
 ﻿namespace biltiful_cli;
 
-public class Menu
+public class MenuInicial
 {
     public static void Show()
     {
@@ -21,24 +21,21 @@ public class Menu
 
         string option = Console.ReadLine()!;
 
-        if (!int.TryParse(option, out int result))
-            Console.WriteLine("Essa não é uma opção válida!");
-
-        switch (result)
+        switch (option)
         {
-            case 0:
+            case "0":
                 Environment.Exit(0);
                 break;
-            case 1:
+            case "1":
                 MenuCadastrosBasicos.Show();
                 break;
-            case 2:
+            case "2":
                 Console.WriteLine("Menu Venda");
                 break;
-            case 3:
+            case "3":
                 Console.WriteLine("Menu Compra");
                 break;
-            case 4:
+            case "4":
                 Console.WriteLine("Menu Produto");
                 break;
             default:

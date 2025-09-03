@@ -1,8 +1,11 @@
-﻿namespace biltiful_cli;
+﻿using CadastrosBasicos;
+using CadastrosBasicos.Cadastros;
+
+namespace biltiful_cli;
 
 public class MenuCliente
 {
-    public static void Show()
+    public static void MenuPrincipal()
     {
         Console.Clear();
         
@@ -18,7 +21,24 @@ public class MenuCliente
         Console.WriteLine("==================================");
         Console.WriteLine("0 - Sair");
         Console.WriteLine("==================================");
+        
+        string option =  Console.ReadLine();
 
+        switch (option)
+        {
+            case "0":
+                MenuInicial.Show();
+                break;
+            case "1":
+                Cliente.CadastrarCliente();
+                break;
+            default:
+                Console.WriteLine("Opção inválida!");
+                Console.WriteLine("Pressione ENTER para continuar...");
+                Console.ReadLine();
+                MenuPrincipal();
+                break;
+        }
     }
 
 }

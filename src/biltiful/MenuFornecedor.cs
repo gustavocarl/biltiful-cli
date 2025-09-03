@@ -1,8 +1,11 @@
-﻿namespace biltiful_cli;
+﻿using CadastrosBasicos;
+using CadastrosBasicos.Cadastros;
+
+namespace biltiful_cli;
 
 public class MenuFornecedor
 {
-    public static void Show()
+    public static void MenuPrincipal()
     {
         Console.Clear();
         
@@ -18,5 +21,23 @@ public class MenuFornecedor
         Console.WriteLine("==================================");
         Console.WriteLine("0 - Sair");
         Console.WriteLine("==================================");
+
+        string option = Console.ReadLine()!;
+
+        switch (option)
+        {
+            case "0":
+                MenuCadastrosBasicos.Show();
+                break;
+            case "1":
+                Fornecedor.CadastrarFornecedor();
+                break;
+            default:
+                Console.WriteLine("Opção inválida!");
+                Console.WriteLine("Pressione ENTER para continuar...");
+                Console.ReadLine();
+                MenuPrincipal();
+                break;
+        }
     }
 }

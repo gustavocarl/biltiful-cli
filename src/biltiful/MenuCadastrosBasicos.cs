@@ -11,32 +11,41 @@ public class MenuCadastrosBasicos
         Console.WriteLine("==================================");
         Console.WriteLine("Menu Cadastros Básicos");
         Console.WriteLine("==================================");
-        Console.WriteLine("1 - Cadastrar Cliente");
-        Console.WriteLine("2 - Cadastrar Fornecedor");
-        Console.WriteLine("3 - Cadastrar Matéria-Prima");
-        Console.WriteLine("4 - Cadastrar Produto");
-        Console.WriteLine("5 - Cadastar Inadimplente");
-        Console.WriteLine("6 - Cadastrar Fornecedor Bloqueado");
+        Console.WriteLine("1 - Menu Cliente");
+        Console.WriteLine("2 - Menu Fornecedor");
+        Console.WriteLine("3 - Menu Matéria-Prima");
+        Console.WriteLine("4 - Menu Produto");
+        Console.WriteLine("5 - Menu Inadimplente");
+        Console.WriteLine("6 - Menu Fornecedor Bloqueado");
         Console.WriteLine("==================================");
         Console.WriteLine("0 - Sair");
         Console.WriteLine("==================================");
 
         string option = Console.ReadLine();
 
-        if (!int.TryParse(option, out int result))
-            Console.WriteLine("Essa não é uma opção válida");
-
-
-        switch (result)
+        
+        switch (option)
         {
-            case 0: 
-                Menu.Show();
+            case "0": 
+                MenuInicial.Show();
                 break;
-            case 1:
-                MenuCliente.Show();
+            case "1":
+                MenuCliente.MenuPrincipal();
                 break;
-            case 2:
-                MenuFornecedor.Show();
+            case "2":
+                MenuFornecedor.MenuPrincipal();
+                break;
+            case "3":
+                MenuMateriaPrima.MenuPrincipal();
+                break;
+            case "4":
+                MenuProduto.MenuPrincipal();
+                break;
+            case "5":
+                MenuInadimplente.MenuPrincipal();
+                break;
+            case "6":
+                MenuFornecedorBloqueado.MenuPrincipal();
                 break;
             default:
                 Console.WriteLine("Opção inválida!");

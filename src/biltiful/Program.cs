@@ -1,3 +1,3 @@
 ﻿using biltiful_cli;
 
-Menu.Show();
+MenuInicial.Show();

@@ -2,7 +2,7 @@
 
 public class MenuMateriaPrima
 {
-    public static void Show()
+    public static void MenuPrincipal()
     {
         Console.Clear();
         

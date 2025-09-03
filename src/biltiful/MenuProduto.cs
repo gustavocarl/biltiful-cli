@@ -2,7 +2,7 @@
 
 public class MenuProduto
 {
-    public static void Show()
+    public static void MenuPrincipal()
     {
         Console.Clear();
         
